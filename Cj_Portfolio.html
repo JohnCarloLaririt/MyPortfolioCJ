@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="script2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">💻 Developer X</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#">Pages</a>
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-text">
+      <h1>I’m <span class="highlight">John Carlo Laririt</span>, <br>UI UX Designer</h1>
+      <a href="#about" class="scroll-btn">↓</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="cj.jpg" alt="Your Portrait" />
+    </div>
+
+    <aside class="side-info">
+      <div class="about" id="about">
+        <h3>ABOUT ME</h3>
+        <p>“As a UI/UX designer, my goal is to create digital experiences that are not only visually appealing but also intuitive and seamless. I focus on understanding user behavior, solving problems through design, and making sure every interaction feels natural. From wireframes to final interfaces, I ensure the product is easy to use, accessible, and engaging across all devices.”.</p>
+        <a href="#">LEARN MORE →</a>
+      </div>
+      <div class="work">
+        <h3>MY WORK</h3>
+        <p>As a UI/UX Designer, I craft intuitive and visually engaging digital experiences by balancing user needs with business goals. I conduct user research, develop wireframes and prototypes, and refine interfaces to ensure seamless interaction and accessibility. </p>
+        <a href="#portfolio">BROWSE PORTFOLIO →</a>
+      </div>
+      <div class="social">
+        <h4>FOLLOW ME</h4>
+        <div class="icons">
+          <a href="https://www.facebook.com/Jhayyc" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ph4rrr/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+
+  <section id="portfolio" class="portfolio-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="Screenshot_1cj.png" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>In this work of mine is about designing a RAF of student of STI.</p>
+       <a href="Screenshot_1cj.png" onclick="showImage('project1', 'another-image.png'); return true;">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="SSCJ4.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Anita Magsaysay-Ho is a renowned artist known for her vibrant and expressive artworks that often depict the beauty of Filipino culture and heritage..</p>
+        <a href="SSCJ4.jpg" onclick="showImage('project2', 'another-image.png'); return true;">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot_2cj.png" alt="Project 3">
+        <h3>Project Title 3</h3>
+        <p>My Project of Cetegorized Border in different sytle.</p>
+        <a href="Screenshot_2cj.png" onclick="showImage('project3', 'another-image.png'); return true;">View Project</a>
+      </div>
+      <div class="project-card" id="project1">
+        <img src="SSCJ3.jpg" alt="Project 4">
+       <h3>Project Title 4</h3>
+       <p>A design for sample web page for buying a car of choice.</p>
+       <a href="SSCJ3.jpg" onclick="showImage('project4', 'another-image.png'); return false;">View Project</a>
+</div>
+    </div>
+  </section>
+
+  <script src="script2.js"></script>
+</body>
+</html>
